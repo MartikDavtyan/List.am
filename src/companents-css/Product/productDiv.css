@@ -1,0 +1,12 @@
+.products-cotalog{
+    margin-top: 20px;
+    width: 98%  ;
+    display: flex;
+    flex-direction: column;
+}
+.products{
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template: auto auto auto auto auto auto;
+}
