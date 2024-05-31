@@ -5,6 +5,7 @@ import './App.css'
 import Header from './companents/Header'
 import Cotalog from './companents/Cotalog'
 import Story from './companents/Story'
+import Product from './companents/Product'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <div className="main">
         <Cotalog />
         <Story />
+        <Product />
       </div>
     </>
   )

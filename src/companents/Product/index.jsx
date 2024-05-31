@@ -54,9 +54,11 @@ export default function index() {
             ]
         }
     ]
-  return (
-    <div className="product-main">
-        
-    </div>
-  )
+    return (
+        <div className="product-main">
+            {productBassa.map((div)=>{
+                return <ProductDiv key={div.id} name={div.name} arr={div.arr}/>
+            })}
+        </div>
+    )
 }

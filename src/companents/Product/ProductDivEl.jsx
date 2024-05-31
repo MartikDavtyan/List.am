@@ -1,13 +1,13 @@
 import React from 'react'
 import '../../companents-css/Product/productDivEl.css'
 
-export default function ProductDivEl() {
+export default function ProductDivEl({img,price,info_1,info_2}) {
   return (
     <div className="product">
-        <img className='img' src="https://s.list.am/h/035/80084035.webp"/>
-        <div className="price">$55,000</div>
-        <div className="info">Audi Q5, 2.0 լ, լիաքարշ, 2022 թ.</div>
-        <div className="info2">2022 թ., 6000 կմ, Բենզին</div>
+            <img className='img' src={img}/>
+            <div className="price">{price}</div>
+            <div className="info">{info_1}</div>
+            <div className="info2">{info_2}</div>
     </div>
   )
 }
