@@ -1,5 +1,7 @@
 import React from 'react'
 import ProductDiv from './ProductDiv'
+import '../../companents-css/Product/product.css'
+
 
 export default function index() {
     const productBassa = [
@@ -53,6 +55,8 @@ export default function index() {
         }
     ]
   return (
-    <div>index</div>
+    <div className="product-main">
+        
+    </div>
   )
 }
