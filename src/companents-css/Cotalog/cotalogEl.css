@@ -1,6 +1,5 @@
 .cotalog-divs{
     font-size: 14px;
-    padding-left: 10px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -11,5 +10,4 @@
 .cotalog-icons{
     width: 18px;
     height: 18px;
-    margin-right: 8px
 }
