@@ -1,0 +1,13 @@
+.cotalog{
+    padding-top: 100px;
+    width: 100%;
+    display: grid;
+    margin-top: 30px;
+    column-gap: 8px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    grid-template: auto auto auto auto auto/auto auto auto auto auto;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
