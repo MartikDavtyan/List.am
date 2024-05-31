@@ -52,7 +52,56 @@ export default function index() {
                     info_2:'2178 քմ'
                 },
             ]
-        }
+        },
+        {
+            id:2,
+            name:'Այլ նյութեր >',
+            arr:[
+                {
+                    id:2.1,
+                    img:'https://s.list.am/h/655/79487655.webp',
+                    price:'2,850 ֏',
+                    info_1:'Գունավոր մետաղների ընդունում',
+                    info_2:''
+                },
+                {
+                    id:2.2,
+                    img:'https://s.list.am/h/438/80014438.webp',
+                    price:'400 ֏',
+                    info_1:'Շենք Արարատյան փողոցում',
+                    info_2:'Ստվարաթուղթ, Կարտոն'
+                },
+                {
+                    id:2.3,
+                    img:'https://s.list.am/h/210/70805210.webp',
+                    price:'3,000 ֏',
+                    info_1:'Գրուզիկ 60g 19mm',
+                    info_2:''
+                },
+                {
+                    id:2.4,
+                    img:'https://s.list.am/h/523/75810523.webp',
+                    price:'100 ֏',
+                    info_1:'Գինու խցաններ ռուսական',
+                    info_2:''
+                },
+                {
+                    id:2.5,
+                    img:'https://s.list.am/h/965/63943965.webp',
+                    price:'4,800 ֏',
+                    info_1:'Կաշվի ներկեր ներկեր',
+                    info_2:''
+                },
+                {
+                    id:2.6,
+                    img:'https://s.list.am/h/390/79724390.webp',
+                    price:'5,000 ֏',
+                    info_1:'Էպոքսիդային խեժ սմալա սմոլա',
+                    info_2:''
+                },
+            ]
+        },
+        
     ]
     return (
         <div className="product-main">
