@@ -6,6 +6,7 @@ import Header from './companents/Header'
 import Cotalog from './companents/Cotalog'
 import Story from './companents/Story'
 import Product from './companents/Product'
+import Footer from './companents/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,12 @@ function App() {
         <Cotalog />
         <Story />
         <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
       </div>
+      <Footer />
     </>
   )
 }
