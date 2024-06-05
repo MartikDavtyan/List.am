@@ -2,7 +2,7 @@ import React from 'react'
 
 import Header from './companents/Header'
 import CatalogEl from './companents/Cotalog/CatalogEl'
-import Story from './companents/Story'
+import StoryEl from './companents/Story/StoryEl'
 import ProductDiv from './companents/Product/ProductDiv'
 import Footer from './companents/Footer'
 export default function Projectmain() {
@@ -384,7 +384,11 @@ export default function Projectmain() {
                 <CatalogEl key={el.id} img={el.img} text={el.text} />
             ))}
         </div>
-        <Story />
+        <div className="c">
+            {dataBassa.storyBassa.map((el) => (
+                <StoryEl key={el.key} bc={el.bc} c={el.c} img={el.img} text={el.text} />
+            ))}
+        </div>
         <div className="product-main">
             {dataBassa.productBassa.map((div)=>{
                 return <ProductDiv key={div.id} name={div.name} arr={div.arr}/>
