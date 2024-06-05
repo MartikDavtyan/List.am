@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Header from './companents/Header'
-import Cotalog from './companents/Cotalog'
+import CatalogEl from './companents/Cotalog/CatalogEl'
 import Story from './companents/Story'
 import ProductDiv from './companents/Product/ProductDiv'
 import Footer from './companents/Footer'
@@ -321,7 +321,11 @@ export default function Projectmain() {
     <>
       <Header />
       <div className="main">
-        <Cotalog />
+        <div className="cotalog">
+            {dataBassa.cotalogBassa.map((el) => (
+                <CatalogEl key={el.id} img={el.img} text={el.text} />
+            ))}
+        </div>
         <Story />
         <div className="product-main">
             {dataBassa.productBassa.map((div)=>{
