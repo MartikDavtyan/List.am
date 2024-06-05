@@ -1,3 +1,92 @@
 .main{
     padding: 0px 120px;
 }
+/* Modal styles */
+.modal { /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #a0a0a0e1;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Close button */
+  .close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modalStart{
+    border-radius: 20px;
+    width: 58%;
+    margin-right: 2%;
+    padding: 1%;
+    background-color: white;
+}
+.modalFinish{
+      background-color: white;
+    width: 34%;
+    padding: 1%;
+    border-radius: 20px         ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modalStart > img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .m{
+    width: 100%;
+    display: flex;
+  }
+  .usrImg{
+    border-radius: 50%;
+    width: 20%;
+  }
+  .wright{
+    color: white;
+    margin-top: 20px        ;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(37, 143, 37);
+    height: 7%;
+    border: none;
+    padding: 10px;
+  }
+  .coll{
+    color: white;
+    margin-top: 20px        ;
+    width: 50%;
+    border-radius: 20px;
+    background-color: rgb(5, 47, 90);
+    height: 7%;
+    border: none;
+    padding: 10px;
+  }
+  .modalStart > p{
+    margin-top: 20px;
+  }
+  .modalStart > h2{
+    margin-top: 20px;
+  }

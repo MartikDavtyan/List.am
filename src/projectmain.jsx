@@ -9,6 +9,7 @@ import StoryEl from './companents/Story/StoryEl'
 import ProductDiv from './companents/Product/ProductDiv'
 import Footer from './companents/Footer'
 export default function Projectmain() {
+    let br = <br />
   
   const dataBassa = {
     productBassa: [
@@ -24,13 +25,13 @@ export default function Projectmain() {
             userImg:'https://avatar.list.am/p/1056789.webp',
             userName:'V Progress',
             text:'Կատարում ենք մետաղական կոնստրուկցիաների (angar, pahest ангар boxer avtotexspasarkum) պատրաստում, կառուցում ',
-            info:`Կատարում ենք ցանկացած չափի, տեսակի մետաղական կոնստրուկցիաների, անգարների, (angar) սենդվիչ պանելներով կառուցապատում, անգարներ, սառնարաններ, տնակներ (domik, vagonchik) ${<br />} 
-            Մետաղական կոնստրուկցիաներ նավեսների պատրաստում, կառուցում շատ արագ և մատչելի:${<br />}
-            Պահեստ${<br />}
-            Անգար${<br />}
-            Մետաղական կոնստրուկցիաներ${<br />}
+            info:`Կատարում ենք ցանկացած չափի, տեսակի մետաղական կոնստրուկցիաների, անգարների, (angar) սենդվիչ պանելներով կառուցապատում, անգարներ, սառնարաններ, տնակներ (domik, vagonchik)  ${br} 
+            Մետաղական կոնստրուկցիաներ նավեսների պատրաստում, կառուցում շատ արագ և մատչելի: ${br}
+            Պահեստ ${br}
+            Անգար ${br}
+            Մետաղական կոնստրուկցիաներ ${br}
             Կոմերցիոն տարածքներ պահեստներ, սառնարաններ
-Անասնաֆերմաներ ${<br />}
+Անասնաֆերմաներ  ${br}
 
             `,
             finishInfo:'Խստիվ արգելվում է կրկնօրինակել էջը, Խնդրում ենք չնմանակել մեր տեքստը և չտեղադրել այլ հայտարարություններում։',
