@@ -8,17 +8,7 @@ function App() {
 
   return (
     <>
-      <Header />
-      <div className="main">
-        <Cotalog />
-        <Story />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-      </div>
-      <Footer />
+      
     </>
   )
 }

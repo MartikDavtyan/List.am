@@ -8,7 +8,13 @@ import Footer from './companents/Footer'
 export default function Projectmain() {
   return (
     <>
-    
+      <Header />
+      <div className="main">
+        <Cotalog />
+        <Story />
+        <Product />
+      </div>
+      <Footer />
     </>
   )
 }
