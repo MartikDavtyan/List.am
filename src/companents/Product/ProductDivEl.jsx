@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../companents-css/Product/productDivEl.css'
 
-export default function ProductDivEl({img,price,info_1,info_2}) {
+export default function ProductDivEl({img,price,info_1,info_2,userImg,userName,text,info,finishInfo,time}) {
   return (
     <div className="product">
             <img className='img' src={img}/>
