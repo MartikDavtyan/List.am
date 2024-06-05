@@ -1,4 +1,7 @@
 import React from 'react'
+import './companents-css/Story/story.css'
+import './companents-css/Cotalog/cotalog.css'
+import './companents-css/Product/product.css'
 
 import Header from './companents/Header'
 import CatalogEl from './companents/Cotalog/CatalogEl'
