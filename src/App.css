@@ -111,3 +111,8 @@
     background-color: blue;
     color: #ffffff;
   }
+  select{
+    width: 100px;
+    padding: 20px;
+    border-radius: 20px;
+  }

@@ -469,7 +469,40 @@ export default function Projectmain() {
         }
     ],
     })
-          
+    function addProd() {
+      let imgURL = document.querySelector('.inputImg').value; // Get the value of the image URL input
+      let text = document.querySelector('.infoInput').value; // Get the value of the text input
+      let p = document.querySelector('.priceInput').value; // Get the value of the price input
+      let select = document.querySelector('select').value; // Get the selected value
+  
+      setDataBassa((prevDataBassa) => {
+          return {
+              ...prevDataBassa,
+              productBassa: prevDataBassa.productBassa.map((el) => {
+                  if (el.name === select) {
+                      
+                      return {
+                          ...el,
+                          arr: [
+                              ...el.arr,
+                              {
+                                  img: imgURL,
+                                  price: p,
+                                  info_1: text,
+                                  info_2: '',
+                              },
+                          ],
+                      };
+                  }
+                  document.querySelector('.inputImg').value = ''
+                  document.querySelector('.infoInput').value = ''
+                  document.querySelector('.priceInput').value = ''
+                  return el;
+              }),
+          };
+      });
+  }
+  
   return (
     <>
       <Header />
@@ -490,13 +523,16 @@ export default function Projectmain() {
                 <input type="text" placeholder='Նկարի հասցեն' className="inputImg" />
                 <input type="text" placeholder='Ապրանքի մասին տեղեկություն' className="infoInput" />
                 <input type="text" placeholder='Ապրանքի արժեք' className="priceInput" />
-                <input type="text" className='tesak' placeholder='Ապրանքի տեսակ'     />
+                <form action="">
+                  <select name="" id="" size={1}>
+                    <option value="Շինարարական ծառայություններ >" className="option1">Շինարարական ծառայություններ ></option>
+                    <option value="Կոմերցիոն անշարժ գույքի և գրասենյակների վարձակալություն >" className="option2">Կոմերցիոն անշարժ գույքի և գրասենյակների վարձակալություն ></option>
+                    <option value="Այլ նյութեր >" className="option3">Այլ նյութեր ></option>
+                    <option value="Ավտոմեքենաներ >" className='option4'>Ավտոմեքենաներ ></option>
+                  </select>
+                </form>
             </div>
-            <button onClick={()=>{
-                setDataBassa(()=>{
-
-                })
-            }}>Ավելացնել</button>
+            <button onClick={addProd}>Ավելացնել</button>
         </div>
         <div className="product-main">
             {dataBassa.productBassa.map((div)=>{
