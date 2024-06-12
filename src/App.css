@@ -90,3 +90,24 @@
   .modalStart > h2{
     margin-top: 20px;
   }
+  .addProduct{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center   ;
+  }
+  .addProduct > h1{
+    margin: 20px;
+  }
+  .inputes{
+    display: flex ;
+  }
+  .addProduct > button{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: #ffffff;
+  }
