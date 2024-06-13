@@ -1,7 +1,7 @@
 import { useRef } from "react"
 import React from 'react'
 
-export default function index({products , setDataBassa}) {
+export default function index({setDataBassa}) {
     
     const imgURL = useRef(null)
     const text = useRef(null)

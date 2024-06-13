@@ -478,7 +478,7 @@ export default function Projectmain() {
       <div className="main">
         <Catalog dataBassa={dataBassa} />
         <Story dataBassa={dataBassa} />
-        <AddProduct products={dataBassa} setDataBassa={setDataBassa}/>
+        <AddProduct setDataBassa={setDataBassa}/>
         <Product dataBassa = {dataBassa}/>
       </div>
       <Footer />
