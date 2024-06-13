@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './companents-css/Story/story.css'
 import './companents-css/Cotalog/cotalog.css'
 import './companents-css/Product/product.css'
 
 import Header from './companents/Header'
-import CatalogEl from './companents/Cotalog/CatalogEl'
-import StoryEl from './companents/Story/StoryEl'
-import ProductDiv from './companents/Product/ProductDiv'
+import AddProduct from "./companents/AddProduct"
+import Catalog from './companents/Cotalog'
+import Story from './companents/Story'
+import Product from './companents/Product'
 import Footer from './companents/Footer'
 export default function Projectmain() {
     let br = <br />
@@ -469,76 +470,16 @@ export default function Projectmain() {
         }
     ],
     })
-    function addProd() {
-      let imgURL = document.querySelector('.inputImg').value; // Get the value of the image URL input
-      let text = document.querySelector('.infoInput').value; // Get the value of the text input
-      let p = document.querySelector('.priceInput').value; // Get the value of the price input
-      let select = document.querySelector('select').value; // Get the selected value
-  
-      setDataBassa((prevDataBassa) => {
-          return {
-              ...prevDataBassa,
-              productBassa: prevDataBassa.productBassa.map((el) => {
-                  if (el.name === select) {
-                      
-                      return {
-                          ...el,
-                          arr: [
-                              ...el.arr,
-                              {
-                                  img: imgURL,
-                                  price: p,
-                                  info_1: text,
-                                  info_2: '',
-                              },
-                          ],
-                      };
-                  }
-                  document.querySelector('.inputImg').value = ''
-                  document.querySelector('.infoInput').value = ''
-                  document.querySelector('.priceInput').value = ''
-                  return el;
-              }),
-          };
-      });
-  }
+   
   
   return (
     <>
       <Header />
       <div className="main">
-        <div className="cotalog">
-            {dataBassa.cotalogBassa.map((el) => (
-                <CatalogEl key={el.id} img={el.img} text={el.text} />
-            ))}
-        </div>
-        <div className="c">
-            {dataBassa.storyBassa.map((el) => (
-                <StoryEl key={el.key} bc={el.bc} c={el.c} img={el.img} text={el.text} />
-            ))}
-        </div>
-        <div className="addProduct">
-            <h1>Ավելացնել ապրանք</h1>
-            <div className="inputes">
-                <input type="text" placeholder='Նկարի հասցեն' className="inputImg" />
-                <input type="text" placeholder='Ապրանքի մասին տեղեկություն' className="infoInput" />
-                <input type="text" placeholder='Ապրանքի արժեք' className="priceInput" />
-                <form action="">
-                  <select name="" id="" size={1}>
-                    <option value="Շինարարական ծառայություններ >" className="option1">Շինարարական ծառայություններ ></option>
-                    <option value="Կոմերցիոն անշարժ գույքի և գրասենյակների վարձակալություն >" className="option2">Կոմերցիոն անշարժ գույքի և գրասենյակների վարձակալություն ></option>
-                    <option value="Այլ նյութեր >" className="option3">Այլ նյութեր ></option>
-                    <option value="Ավտոմեքենաներ >" className='option4'>Ավտոմեքենաներ ></option>
-                  </select>
-                </form>
-            </div>
-            <button onClick={addProd}>Ավելացնել</button>
-        </div>
-        <div className="product-main">
-            {dataBassa.productBassa.map((div)=>{
-                return <ProductDiv key={div.id} name={div.name} arr={div.arr}/>
-            })}
-        </div>
+        <Catalog dataBassa={dataBassa} />
+        <Story dataBassa={dataBassa} />
+        <AddProduct products={dataBassa} setDataBassa={setDataBassa}/>
+        <Product dataBassa = {dataBassa}/>
       </div>
       <Footer />
     </>
