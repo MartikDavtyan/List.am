@@ -3,9 +3,9 @@ import '../../companents-css/Cotalog/cotalogEl.css'
 
 export default function CatalogEl({img,text}) {
   return (
-    <div class="cotalog-divs">
+    <div className="cotalog-divs">
         <a>
-            <img class="cotalog-icons" src={img}  />
+            <img className="cotalog-icons" src={img}  />
         {text}</a>
     </div>
   )
